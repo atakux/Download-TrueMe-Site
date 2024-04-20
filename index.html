@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    header {
+      margin-top: 0;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      margin: auto;
+    }
+    main {
+      margin-top: 320px; /* Adjust as necessary */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    img {
+      border-radius: 20px; /* Rounded corners */
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin: 10px;
+    }
+    .expo-button {
+      display: inline-block;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .instructions {
+      text-align: center;
+      margin-top: auto; /* Push to the bottom */
+      margin-bottom: 20px; /* Add some space at the bottom */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img alt="TrueMe Logo" src="assets/trueme.png" width="150" />
+    <h1>Download TrueMe on any device!</h1>
+    <a href="https://github.com/atakux/TrueMe" target="_blank" style="position: fixed; top: 20px; right: 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="40" height="40">
+      </a>
+      
+  </header>
+
+  <main>
+    <div class="buttons">
+      <div class="button">
+        <a href="https://testflight.apple.com/join/HZ7GFHxq">
+          <img
+            alt="Download on the App Store"
+            src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+            width="250"
+          />
+        </a>
+      </div>
+      <div class="button">
+        <a href="https://play.google.com/store/apps/details?id=com.trueme">
+          <img
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            width="280"
+          />
+        </a>
+      </div>
+      <div class="expo-button">
+        <a
+          href="exp://u.expo.dev/5edc955a-03aa-429a-9a61-a1766c65b239/group/752ae50a-5467-40ba-8a7d-b4cdb22d177a"
+        >
+          <img
+            alt="Open in Expo Go"
+            src="assets/expo.png"
+            width="230"
+            height="90"
+          />
+        </a>
+      </div>
+    </div>
+  </main>
+  <div class="instructions">
+    <p>
+      Please fill out this
+      <a href="https://forms.gle/a4LqwmBMkL92c1Eh7">Google Form</a> to be
+      added to Google Play's closed testing list before attempting to
+      download from Google Play on Android devices.
+    </p>
+  </div>
+
+  <footer>
+    <p>Connect with the developers on LinkedIn:</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/xatakux/">Angela DeLeo</a></li>
+      <li><a href="https://www.linkedin.com/in/roman-saddi/">Roman Saddi</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
