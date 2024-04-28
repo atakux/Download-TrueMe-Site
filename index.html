@@ -50,10 +50,13 @@
       border-radius: 10px;
       overflow: hidden;
     }
-    .instructions {
+    footer {
+      margin-top: auto;
       text-align: center;
-      margin-top: auto; /* Push to the bottom */
-      margin-bottom: 20px; /* Add some space at the bottom */
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px;
+      border-top: 2px solid #ccc;
     }
   </style>
 </head>
@@ -82,7 +85,7 @@
         </a>
       </div>
       <div class="button">
-        <a href="https://play.google.com/store/apps/details?id=com.trueme" target="_blank">
+        <a href="https://play.google.com/store/apps/details?id=com.trueme" target="_blank" id="googlePlayButton">
           <img
             alt="Get it on Google Play"
             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -104,21 +107,21 @@
       </div>
     </div>
   </main>
-  <div class="instructions">
-    <p>
-      Please fill out this
-      <a href="https://forms.gle/a4LqwmBMkL92c1Eh7">Google Form</a> to be
-      added to Google Play's closed testing list before attempting to
-      download from Google Play on Android devices.
-    </p>
-  </div>
 
   <footer>
     <p>Connect with the developers on LinkedIn:</p>
     <ul>
-      <li><a href="https://www.linkedin.com/in/xatakux/">Angela DeLeo</a></li>
-      <li><a href="https://www.linkedin.com/in/roman-saddi/">Roman Saddi</a></li>
+      <a href="https://www.linkedin.com/in/xatakux/">Angela DeLeo</a>
+      <br>
+      <a href="https://www.linkedin.com/in/roman-saddi/">Roman Saddi</a>
     </ul>
   </footer>
+
+  <script>
+    document.getElementById('googlePlayButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.location.href = 'android.html';
+    });
+  </script>
 </body>
 </html>
